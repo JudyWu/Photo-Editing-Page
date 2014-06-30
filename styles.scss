@@ -2,7 +2,7 @@ $main-color: #ce6c7b; //#c5526d; //#1F535C; //green
 
 header, footer {
   color: $main-color;
-  background-image: url('/pictures/food.png');
+  background-image: url('{{ site.baseurl }}/pictures/food.png');
 }
 
 
