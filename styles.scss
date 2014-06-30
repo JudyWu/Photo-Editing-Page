@@ -1,13 +1,16 @@
-$main-color: #1F535C; //green
+$main-color: #ce6c7b; //#c5526d; //#1F535C; //green
 
-body {
+header, footer {
   color: $main-color;
+  background-image: url('/pictures/food.png');
 }
+
 
 #image-display-area {
   width: 100%; 
   height: 500px; 
   border: 5px solid $main-color; 
+  background-color: $main-color;
 
   img {
   	max-height: 100%; 
@@ -15,8 +18,6 @@ body {
   	display: block; 
   	margin-left: auto; 
   	margin-right: auto;
-
-
   }
 }
 
@@ -26,7 +27,7 @@ body {
   padding-top: 20px;
   li {
     list-style-type: none;
-    display: inline;
+    display: block;
     padding: 10px;
     background: $main-color;
     color: white; 
