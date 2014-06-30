@@ -1,0 +1,22 @@
+body {
+  color: #1f535c; }
+
+#image-display-area {
+  width: 100%;
+  height: 500px;
+  border: 5px solid #1f535c; }
+  #image-display-area img {
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+
+#function-button-area {
+  padding-top: 20px; }
+  #function-button-area li {
+    list-style-type: none;
+    display: inline;
+    padding: 10px;
+    background: #1f535c;
+    color: white; }

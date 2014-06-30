@@ -1,0 +1,35 @@
+$main-color: #1F535C; //green
+
+body {
+  color: $main-color;
+}
+
+#image-display-area {
+  width: 100%; 
+  height: 500px; 
+  border: 5px solid $main-color; 
+
+  img {
+  	max-height: 100%; 
+  	max-width: 100%;
+  	display: block; 
+  	margin-left: auto; 
+  	margin-right: auto;
+
+
+  }
+}
+
+
+
+#function-button-area {
+  padding-top: 20px;
+  li {
+    list-style-type: none;
+    display: inline;
+    padding: 10px;
+    background: $main-color;
+    color: white; 
+  }
+  
+}
