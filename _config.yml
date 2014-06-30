@@ -2,7 +2,7 @@
 title: Blacklight Image Editing 
 email: jaoshinu@gmail.com
 description: "This website uses the plugins from Pixastic to provide most basic image editing functions."
-baseurl: ""
+baseurl: "/Photo-Editing-Page"
 url: "http://yourdomain.com"
 
 # Build settings
