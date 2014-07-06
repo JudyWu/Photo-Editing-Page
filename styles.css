@@ -1,11 +1,21 @@
 header, footer {
-  color: #c5526d;
+  color: #ce6c7b;
   background-image: url("/pictures/food.png"); }
+
+header title {
+  color: #ce6c7b; }
+
+#bind-logo-red {
+  width: 40px;
+  height: 40px;
+  -moz-border-radius: 15px;
+  border-radius: 15px; }
 
 #image-display-area {
   width: 100%;
   height: 500px;
-  border: 5px solid #c5526d; }
+  border: 5px solid #ce6c7b;
+  background-color: url("/pictures/Bind-logo-black.png"); }
   #image-display-area img {
     max-height: 100%;
     max-width: 100%;
@@ -13,11 +23,14 @@ header, footer {
     margin-left: auto;
     margin-right: auto; }
 
-#function-button-area {
+#function-button-area, #save-upload-buttons {
   padding-top: 20px; }
-  #function-button-area li {
+  #function-button-area li, #save-upload-buttons li {
     list-style-type: none;
-    display: inline;
+    display: inline-block;
+    margin: 5px;
     padding: 10px;
-    background: #c5526d;
-    color: white; }
+    background: #ce6c7b;
+    color: white;
+    -moz-border-radius: 15px;
+    border-radius: 15px; }
