@@ -1,4 +1,5 @@
 $main-color: #ce6c7b; //#c5526d; //#1F535C; //green
+$alternative-color: #c09c41;
 $main-text-font: 'Just Another Hand', Helvetica, sans-serif;
 
 header, footer {
@@ -19,6 +20,7 @@ header {
   height: 40px;
   -moz-border-radius: 15px;
   border-radius: 15px;
+  display: inline;
 }
 
 #image-display-area {
@@ -38,17 +40,40 @@ header {
 
 
 
-#function-button-area, #save-upload-buttons {
-  padding-top: 20px;
+#function-button-area, #save-upload-buttons  {
+
+  margin: 20px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  
+
   li {
     list-style-type: none;
     display: inline-block;
-    margin: 5px;
+    padding: 10px;
+    color: white; 
+    
+  }
+
+  
+}
+#function-button-area {
+  background: $main-color;
+  button {
+   
     padding: 10px;
     background: $main-color;
-    color: white; 
     -moz-border-radius: 15px;
     border-radius: 15px;
   }
-  
+
+}
+#save-upload-buttons  {
+  button {
+   
+    padding: 10px;
+    background: $alternative-color;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+  }
 }

@@ -9,7 +9,8 @@ header title {
   width: 40px;
   height: 40px;
   -moz-border-radius: 15px;
-  border-radius: 15px; }
+  border-radius: 15px;
+  display: inline; }
 
 #image-display-area {
   width: 100%;
@@ -24,13 +25,25 @@ header title {
     margin-right: auto; }
 
 #function-button-area, #save-upload-buttons {
-  padding-top: 20px; }
+  margin: 20px;
+  -moz-border-radius: 15px;
+  border-radius: 15px; }
   #function-button-area li, #save-upload-buttons li {
     list-style-type: none;
     display: inline-block;
-    margin: 5px;
+    padding: 10px;
+    color: white; }
+
+#function-button-area {
+  background: #ce6c7b; }
+  #function-button-area button {
     padding: 10px;
     background: #ce6c7b;
-    color: white;
     -moz-border-radius: 15px;
     border-radius: 15px; }
+
+#save-upload-buttons button {
+  padding: 10px;
+  background: #c09c41;
+  -moz-border-radius: 15px;
+  border-radius: 15px; }
