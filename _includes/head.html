@@ -18,20 +18,43 @@
     <!-- google text --> 
     <link href="http://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet" type="text/css">
     <!-- normalize css --> 
-    <link rel="stylesheet" type="text/css" href="{{ "/normalize.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" type="text/css" href="{{ "/css/normalize.css" | prepend: site.baseurl }}">
+    <!-- favicon --> 
+    <link rel="shortcut icon" type="image/x-icon" href="{{ "/pictures/favicon.ico" | prepend: site.baseurl }}">
 
-    <!-- bootstrap JS --> 
+    <!-- Load Feather code --> 
+    <script type="text/javascript" src="http://feather.aviary.com/js/feather.js"></script>
+
+
+    <script type='text/javascript'>
+       var featherEditor = new Aviary.Feather({
+           apiKey: '68bd6409932231f7',
+           apiVersion: 3,
+           theme: 'dark', 
+           tools: 'all',
+           appendTo: 'injection_site',
+           onSave: function(imageID, newURL) {
+               var img = document.getElementById(imageID);
+               img.src = newURL;
+           },
+           onError: function(errorObj) {
+               alert(errorObj.message);
+           }
+       });
+       function launchEditor(id, src) {
+           featherEditor.launch({
+               image: id,
+               url: src
+           });
+          return false;
+       }
+    </script>
+
+    
+    
+    <!-- my JS --> 
     <script type="text/javascript" src="{{ "/bootstrap/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
 
-    <!-- pixastic JS --> 
-    <script type="text/javascript" src="{{ "/pixastic.js" | prepend: site.baseurl }}"></script>
-
-    <!-- my JS --> 
-    <script type="text/javascript" src="{{ "/script.js" | prepend: site.baseurl }}"></script>
-
   
-
-
-
 
 </head>

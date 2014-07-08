@@ -15,14 +15,23 @@ header title {
 #image-display-area {
   width: 100%;
   height: 500px;
-  border: 5px solid #ce6c7b;
   background-color: url("/pictures/Bind-logo-black.png"); }
   #image-display-area img {
     max-height: 100%;
     max-width: 100%;
     display: block;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    position: relative; }
+
+#edit-button {
+  font-size: 25px;
+  color: white;
+  background: #ce6c7b;
+  padding: 5px;
+  margin: 5px;
+  -moz-border-radius: 15px;
+  border-radius: 15px; }
 
 #function-button-area, #save-upload-buttons {
   margin: 20px;
@@ -34,16 +43,14 @@ header title {
     padding: 10px;
     color: white; }
 
-#function-button-area {
-  background: #ce6c7b; }
-  #function-button-area button {
-    padding: 10px;
-    background: #ce6c7b;
-    -moz-border-radius: 15px;
-    border-radius: 15px; }
+#function-button-area button {
+  padding: 10px;
+  background: #ce6c7b;
+  -moz-border-radius: 15px;
+  border-radius: 15px; }
 
 #save-upload-buttons button {
   padding: 10px;
-  background: #c09c41;
+  background: #fac564;
   -moz-border-radius: 15px;
   border-radius: 15px; }

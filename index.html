@@ -3,41 +3,15 @@ layout: default
 ---
 
 <div class="home">
+  
   <div id="image-display-area" >
-    <img src="pictures/ajisai.jpg" class="img-responsive " alt="Responsive image" id="image">
-  </div>
-
-  <div class="row">
-    <div class="col-md-7">
-      <div id="function-button-area">
-        <ul>
-          <li><button onclick="blurImg();">Blur</button></li>
-          <li><button>Rotate</button></li>
-          <li><button>Zoom In</button></li>
-          <li><button>Zoom Out</button></li>
-          <li><button>Solarize</button></li>
-          <li><button>Desaturate</button></li>
-          <li><button>Edge Detection</button></li>
-          <li><button>Flip Horizontally</button></li>
-          <li><button>Flip Vertically</button></li>
-          
-
-        </ul>
-
-      </div>
-    </div>
-
-    <div class="col-md-4 col-md-offset-1">
-      <div id="save-upload-buttons">
-        <ul>
-          <li><button>Upload</button></li>
-          <li><button>Save</button></li>
-        </ul>
-      </div>
-      
-    </div>
+    <div id='injection_site'></div>
+    <img src="http://images.aviary.com/imagesv5/feather_default.jpg" alt="Responsive image" id="image1"> 
+    
 
   </div>
+
+ <div id="edit-button"><center><a  type='image' src='' value='Edit photo' onclick="return launchEditor('image1', 'http://images.aviary.com/imagesv5/feather_default.jpg')" />Edit Image</a></center></div>
 
 
 
